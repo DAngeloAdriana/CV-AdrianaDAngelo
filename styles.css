@@ -1,0 +1,261 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/********* Barra de navegación *********/
+nav {
+    background-color: #303030;
+  }
+
+ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+nav ul li {
+    margin: 0;
+  }
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+  }
+
+nav ul li a:hover {
+    background-color: #555;
+  }
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+/********* Columna IZQUIERDA *********/
+
+.columna-izquierda {
+	width: 35%;
+	background-color: #edffea;
+	padding: 30px;
+}
+
+.mi-nombre {
+    text-align: center;
+    color: #303030;;
+    font-size: 2.7em;
+    font-family: 'Mynerve', cursive;
+}
+
+/* fotoPerfil es el contenedor y mi-foto es la foto */
+.fotoPerfil {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.mi-foto {
+    max-width: 85%;
+    border-radius: 100%; 
+}
+
+/* Contacto */
+
+ul {
+	list-style-type: none; /* Quita el aspecto de lista */
+	margin: 20px 0;
+}
+
+li {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.1em; /* Separa las letras */
+	margin-bottom: 10px;
+    padding: 0.1em;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.icon {
+    font-size: 1em;
+  }
+
+.icon-background {
+    color: #B6C9B3;
+    font-size: 1em;
+  }
+
+/********* Columna DERECHA *********/
+
+.sobre-mi {
+    text-align: center;
+    color: #303030;;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    padding-bottom: 1.5em;
+}
+
+.columna-derecha {
+	width: 65%;
+	background-color: #fffef8;
+	padding: 30px;
+}
+
+.titulo {
+    font-family: 'Mynerve', cursive;
+    font-size: 1.7em;
+    color: #303030;
+    text-align: left;
+    background-color: #B6C9B3;
+    padding: 0.15em 0.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+}
+
+.subtitulo {
+    color: #5a6751;;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase; /* Para transformar el texto a mayúsculas */
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    padding-bottom: 0.5em;
+}
+
+.datos {
+    color: #303030;;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    padding-bottom: 1.1em;
+}
+
+.fecha {
+    color: #555555;;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.04em; /* Separa las letras */
+    padding-bottom: 0.8em;
+}
+
+/** Linea de tiempo **/
+.linea {
+    position: relative;
+    width: 2px;
+    background-color: #303030;
+    padding: 0;
+  }
+
+.linea-item {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+.linea-circulo {
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    background-color: #303030;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+.linea-contenido {
+    position: relative;
+    left: 20px;
+    padding: 10px;
+    width: 600px;
+  }
+
+.linea-contenido h3 {
+    margin-top: 0;
+  }
+
+.linea-contenido p {
+    margin-bottom: 0;
+  }
+
+/*------- RESPONSIVE PARA CELULAR -------*/
+@media only screen and (max-width: 769px) {
+
+    body {
+        width: auto;
+    }
+
+    nav {
+        background-color: #303030;
+        width: auto;
+      }
+
+    ul.menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+    nav ul li a {
+        padding: 12px;
+      }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columna-izquierda {
+        width: auto;
+    }
+
+    .mi-nombre {
+        font-size: 2.6em;
+    }
+
+    .sobre-mi {
+        font-size: 1.2em;
+    }
+
+    .columna-derecha {
+        width: auto;
+    }
+
+    .linea-contenido {
+        width: 280px;
+    }
+
+    .titulo {
+        font-size: 1.6em;
+    }
+}
+
+  /*------- RESPONSIVE PARA TABLET -------*/
+  @media only screen and (min-width: 768px) {
+
+    .mi-nombre {
+        font-size: 2.2em;
+    }
+
+    li.info {
+        font-size: 0.8em;
+    }
+    .linea-contenido {
+        width: 400px;
+    }
+  }
